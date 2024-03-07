@@ -1,5 +1,5 @@
 package com.company.microservice.controller;
-
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -25,7 +25,7 @@ private Map<String, Animal> datosAnimales = new HashMap<>();
     }
 
 
-       private void initDatosAnimales() {
+    public void initDatosAnimales() {
         // Aquí asignas los datos generados a los objetos de la clase Animal y los almacenas en datosAnimales
         // Suponiendo que tienes los datos en un HashMap llamado datos_animales
         Random random = new Random();
