@@ -11,4 +11,9 @@ public class Controller {
     public ResponseEntity<String> get() {
         return ResponseEntity.ok("Hello from Railway + Spring!");
     }
+
+    @GetMapping("/hola")
+    public ResponseEntity<String> get() {
+        return ResponseEntity.ok("hola");
+    }
 }
